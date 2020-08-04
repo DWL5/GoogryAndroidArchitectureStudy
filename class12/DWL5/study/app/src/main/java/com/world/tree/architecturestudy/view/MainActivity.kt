@@ -13,9 +13,6 @@ import com.world.tree.architecturestudy.CommonApplication
 import com.world.tree.architecturestudy.MovieContainer
 import com.world.tree.architecturestudy.R
 import com.world.tree.architecturestudy.databinding.ActivityMainBinding
-import com.world.tree.architecturestudy.model.Movie
-import com.world.tree.architecturestudy.presenter.MovieContract
-import com.world.tree.architecturestudy.presenter.MoviePresenterImpl
 import kotlinx.android.synthetic.main.activity_main.*
 
 
