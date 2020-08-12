@@ -1,16 +1,15 @@
 package com.world.tree.architecturestudy.view
 
 import android.content.Intent
-import android.content.Intent.FLAG_ACTIVITY_NEW_TASK
+
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import androidx.databinding.Observable
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
+import org.koin.androidx.viewmodel.ext.android.viewModel
 import com.world.tree.architecturestudy.CommonApplication
 import com.world.tree.architecturestudy.MovieContainer
 import com.world.tree.architecturestudy.R
