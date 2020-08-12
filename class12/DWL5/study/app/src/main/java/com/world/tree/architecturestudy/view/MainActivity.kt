@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity(), MovieAdapter.OnItemClickListener {
     private lateinit var adapter: MovieAdapter
     private lateinit var binding:ActivityMainBinding
 
+    private val viewModel : MainViewModel by viewModel()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
@@ -31,9 +33,6 @@ class MainActivity : AppCompatActivity(), MovieAdapter.OnItemClickListener {
         adapter.setOnItemClickListener(this)
         recyclerView.adapter = adapter
 
-
-        val viewModel = ViewModelProvider(this, MainViewModelProvider(movieContainer.repository))
-            .get(MainViewModel::class.java)
 
         binding.viewModel = viewModel
         binding.lifecycleOwner = this

@@ -1,6 +1,8 @@
 package com.world.tree.architecturestudy
 
 import android.app.Application
+import org.koin.android.ext.koin.androidContext
+import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 
 class CommonApplication:Application() {
@@ -9,6 +11,8 @@ class CommonApplication:Application() {
         super.onCreate()
 
         startKoin {
+            androidLogger()
+            androidContext(this@CommonApplication)
             modules(appModule)
         }
     }
